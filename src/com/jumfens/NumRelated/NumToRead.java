@@ -24,7 +24,7 @@ public class NumToRead {
         map.put("9","玖");
         map.put("10","拾");
 
-        String input = "90063";
+        String input = "10103";
         System.out.println(input);
         String trans = transfer(input);
         System.out.println("translate : "+trans);
@@ -35,7 +35,7 @@ public class NumToRead {
 
     public static String process(String trans){
         String pro = trans;
-        pro = pro.replace("零十","零");
+        pro = pro.replace("零拾","零");
         pro = pro.replace("零百","零");
         pro = pro.replace("零千","零");
 
