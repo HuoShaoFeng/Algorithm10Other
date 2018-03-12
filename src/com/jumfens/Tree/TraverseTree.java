@@ -69,7 +69,7 @@ public class TraverseTree {
     public static void preOrderUnRecur(Node root){
         if(root!=null){
             Stack<Node> stack = new Stack<>();
-            stack.add(root);
+            stack.push(root);
             while (!stack.isEmpty()){
                 root = stack.pop();
 
@@ -118,8 +118,6 @@ public class TraverseTree {
                 System.out.print(s2.pop().data+", ");
             }
         }
-
-
     }
 
 }
